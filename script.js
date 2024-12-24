@@ -7,11 +7,9 @@ function displayMessage() {
   if (nameInput.value.trim() !== "") {
     message.textContent = `Joyeux Noël ${nameInput.value.trim()} !`;
     message.classList.remove("hidden");
-    videoContainer.classList.remove("hidden");
 
     // Ajoute une animation en réinitialisant les classes
     message.classList.add("bounce");
-    videoContainer.classList.add("bounce");
   } else {
     alert("Veuillez entrer votre nom !");
   }
